@@ -69,4 +69,4 @@ toml==0.10.2
 torch==2.7.0
 tornado==6.4.2
 tqdm==4.67.1
-pyaudio==0.2.11
+pocketsphinx==0.1.15   # This replaces PyAudio as an alternative for speech recognition
