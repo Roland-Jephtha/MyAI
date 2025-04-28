@@ -1,5 +1,10 @@
+accelerate==1.6.0
+aioice==0.10.1
+aiortc==1.11.0
+altair==5.5.0
 annotated-types==0.7.0
 anyio==4.9.0
+ascii_colors==0.10.0
 attrs==25.3.0
 av==14.3.0
 blinker==1.9.0
@@ -35,10 +40,18 @@ mpmath==1.3.0
 narwhals==1.36.0
 networkx==3.4.2
 numba==0.61.2
+numpy==2.2.5
+openai==1.76.0
+openai-whisper==20240930
 packaging==24.2
+pandas==2.2.3
+pillow==11.2.1
+pipmaster==0.7.0
+playsound==1.3.0
 protobuf==5.29.4
 psutil==7.0.0
 pyarrow==19.0.1
+PyAudio==0.2.14
 pycparser==2.22
 pydantic==2.11.3
 pydantic_core==2.33.1
@@ -48,6 +61,7 @@ pyee==13.0.0
 pylibsrtp==0.12.0
 pyOpenSSL==25.0.0
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
 pytz==2025.2
 PyYAML==6.0.2
 referencing==0.36.2
@@ -60,6 +74,7 @@ smmap==5.0.2
 sniffio==1.3.1
 SpeechRecognition==3.14.2
 streamlit==1.44.1
+streamlit-audiorec @ git+https://github.com/stefanrmmr/streamlit_audio_recorder@777d18114130137d492c0378a86631fff1ff1be5
 streamlit-webrtc==0.62.4
 sympy==1.13.3
 tenacity==9.1.2
@@ -69,15 +84,8 @@ toml==0.10.2
 torch==2.7.0
 tornado==6.4.2
 tqdm==4.67.1
-pocketsphinx==0.1.15   # This replaces PyAudio as an alternative for speech recognition
-
-
-
-
-
-
-
-
-
-
-
+typing-inspection==0.4.0
+typing_extensions==4.13.2
+tzdata==2025.2
+urllib3==2.4.0
+watchdog==6.0.0
