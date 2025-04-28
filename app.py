@@ -9,13 +9,18 @@ import time
 import base64
 import glob
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+
+# Load environment variables
+load_dotenv()
 
 
 # Configure the Streamlit page
 st.set_page_config(page_title="Voice Assistant - Zara", layout="centered")
 
 # OpenRouter API Key and Base URL
-openrouter_api_key = "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"
+openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
 openrouter_api_base = "https://openrouter.ai/api/v1"
 
 # Title
@@ -152,6 +157,7 @@ def speak(text):
 # Button to start listening
 if st.button('🎤 Start Talking'):
     listen()
+
 
 
 
