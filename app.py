@@ -139,6 +139,7 @@ def respond(query):
 
 
             speak(answer)
+            return answer
 
 
 
