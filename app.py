@@ -308,6 +308,10 @@ def respond(query):
     if "Zara" in query:
         query = query.replace("Zara", "").strip()
 
+
+
+
+
     payload = {
         "model": "gpt-4o",
         "messages": [
@@ -324,7 +328,7 @@ def respond(query):
                 "content": f"{query}"
             }
         ],
-        "max_tokens": 700
+        "max_tokens": 500
     }
 
 
@@ -398,6 +402,9 @@ components.html(
 # Capture the speech input and trigger the response
 speech_input = st.session_state.get("speech_input", None)
 
+
+
+
 if speech_input:
     st.success(f"🗣️ You said: {speech_input}")
     messages_array.append({'role': 'user', 'content': speech_input})
@@ -407,6 +414,8 @@ else:
 
 
 
+if st.button('🎤 Start Talking'):
+    listen()
 
 
 
